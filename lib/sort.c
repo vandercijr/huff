@@ -1,4 +1,4 @@
-void quicksort(char * arr, int left, int right)
+void quickSort(char * arr, int left, int right)
 {
     int l,r;
     char * pivot, aux;
@@ -24,10 +24,10 @@ void quicksort(char * arr, int left, int right)
     }
 
     if (r > left) {
-      quicksort(arr, left, r);
+      quickSort(arr, left, r);
     }
 
     if (l < right) {
-        quicksort(arr, l, right);
+        quickSort(arr, l, right);
     }
 }
